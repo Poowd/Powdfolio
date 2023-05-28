@@ -6,7 +6,7 @@ HEADER
 .container-header {
     width: 100%;
     height: 7vh;
-    display: grid; grid-template-columns: 20% 55% 25%;
+    display: grid; grid-template-columns: 30% 40% 30%;
     color: #F5F5F7; background-color: #9c1428;
     position: fixed;
     z-index: 999;
@@ -19,20 +19,10 @@ HEADER
 .header-grid-item-2 {
     padding: 26px 0 0 24px;
     text-align: center;
-}
+}   
 .header-grid-item-3 {
     padding: 26px 0 0 24px;
     text-align: left;
-}
-
-.header-title {
-    font-size: 18px; 
-    padding-right: 128px;
-}
-.header-title a {
-    text-decoration: none;
-    color: #F5F5F7;
-    font-size: 30px; font-weight: 700;
 }
    
 .nav-bar ul li {
