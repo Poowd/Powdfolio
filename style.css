@@ -272,7 +272,7 @@ section.general {
 
 section.blog {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.7)), url(/img/background.jpg); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.7)), url(/img/background-1.jpg); 
     background-size: cover; 
     background-position: center;
 
@@ -466,7 +466,7 @@ progress::-webkit-progress-value {
     background-color: #ff000000;
     color: #ffffff4a;
     scale: 2;
-    margin: 50px 0px 20px 0 ;
+    margin: -390px 20px 20px 20px ;
   }
 
   .slider-button:hover {
@@ -478,6 +478,7 @@ progress::-webkit-progress-value {
   
   /* Styling for previous button */
   .slider-button.previous {
+    float: left;
     
   }
   
@@ -512,6 +513,7 @@ progress::-webkit-progress-value {
   
   /* Styling for previous button */
   .slider-button.previous-2 {
+    float: left;
   }
   
   /* Styling for next button */
