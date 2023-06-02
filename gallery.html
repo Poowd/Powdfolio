@@ -107,37 +107,6 @@
         </div>
     </section>
     
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        const slider = document.querySelector('.slider');
-        const sliderItems = document.querySelectorAll('.slider-item');
-        const previousBtn = document.querySelector('.slider-button.previous');
-        const nextBtn = document.querySelector('.slider-button.next');
-
-        let currentIndex = 0;
-        const totalItems = sliderItems.length;
-        const itemWidth = sliderItems[0].offsetWidth;
-
-        function goToSlide(index) {
-            if (index < 0 || index >= totalItems) {
-            return;
-            }
-            currentIndex = index;
-            const translateX = -currentIndex * itemWidth;
-            slider.style.transform = `translateX(${translateX}px)`;
-        }
-
-        function goToPrevious() {
-            goToSlide(currentIndex - 1);
-        }
-
-        function goToNext() {
-            goToSlide(currentIndex + 1);
-        }
-
-        previousBtn.addEventListener('click', goToPrevious);
-        nextBtn.addEventListener('click', goToNext);
-        });
-    </script>
+    <script src="js/gallery.js"></script>
 </body>
 </html>
