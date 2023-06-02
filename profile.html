@@ -1,72 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PowdFolio 7</title>
-        <link rel="icon" href="/img/icon.png" type="image/x-icon"/>
-    
-        <!-- CSS -->
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="/css/header.css">
-        <link rel="stylesheet" href="/css/scrollbar.css">
-    
-        <!-- GOOGLE FONTS -->
-        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'> 
-    </head>
-    <body>
-       <!-- NAVIGATION -->
-        <nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porf</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/scrollbar.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+</head>
+<body>
+    <!-- HEADER -->
+    <!-- NAV -->
+    <nav>
         <label class="nav-logo">PowdFolio</label>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="profile.html">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
         </ul>
-        </nav>
-        
-        <div class="content">
-            <!-- CONTENT -->
-            <header class="header">
-            <h1>About Me</h1>
-            <hr>
-            <p>Hello there! My name is Mark Lape, and I'm delighted to share a little bit about myself with you. 
+    </nav>
+    <!-- SECTION -->
+    <section class="general">
+        <div class="content-head">
+            <h1 id="head-title"><a href="index.html">Home</a> / 
+                                <span>ABOUT ME</span></h1>
+            <hr id="head-separation">
+            <p id="head-description">
+                Hello there! My name is Mark Lape, and I'm delighted to share a little bit about myself with you. 
                 I'm a passionate individual who finds joy in exploring the wonders of life and constantly seeking 
-                new experiences.</p>
-            </header>
-
-            <article>
-                <div class="content-profile">
-                    <div class="content-profile-1">
-                    </div>
-                    <div class="content-profile-2">
-                        <img src="/img/profile-img-2.jpg">
-                        
-                    </div>
-                    <div class="content-profile-3">
-                        <p>
-                            One of my greatest passions is learning. I have an insatiable curiosity that drives me to delve 
-                            into various subjects, from science and technology to art and literature. I believe in the power 
-                            of knowledge to transform lives and make the world a better place.<br><br>
-                            In my free time, I love to engage in creative pursuits. Whether it's writing, drawing, or playing 
-                            video games, I find immense fulfillment in expressing myself artistically. These creative 
-                            outlets allow me to unleash my imagination and cultivate a sense of mindfulness.
-                        </p>
-                        <hr>
-                        <form action="skills.html"><button>Next</button></form>
-                    </div>
-                    <div class="content-profile-4">
-                    </div>
-                </div>
-            </article>
-
-            <footer>
-                <div class="global-footer">
-                    <p>&copy; copyrights! 2023 | Powd.Mark Lape - Let's Connect! Discord : Powd#1659 | Facebook : Mark Limuel L. Lape</p>
-                </div>
-            </footer>
+                new experiences.
+            </p>
         </div>
+        <div class="content-content">
+            <div class="col-1">
+                <img src="/img/profile-img-2.jpg" id="profile-img">
+            </div>
+            <div class="col-2">
+                <p id="content-description">
+                    One of my greatest passions is learning. I have an insatiable curiosity that drives me to delve 
+                    into various subjects, from science and technology to art and literature. I believe in the power 
+                    of knowledge to transform lives and make the world a better place.<br><br>
+                    In my free time, I love to engage in creative pursuits. Whether it's writing, drawing, or playing 
+                    video games, I find immense fulfillment in expressing myself artistically. These creative 
+                    outlets allow me to unleash my imagination and cultivate a sense of mindfulness.
+                </p>
+                <hr id="profile-content-separator">
+                <form action="skills.html"><button id="content-button">Next</button></form>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <p>&copy; copyright! 2023 | Powd.Mark Lape - Let's Connect! Discord : Powd#1659 | Facebook : Mark Limuel L. Lape</p>
+        </div>
+    </section>
+    
 </body>
 </html>

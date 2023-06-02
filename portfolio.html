@@ -4,52 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PowdFolio</title>
+    <title>Porf</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/scrollbar.css">
+
     <!-- GOOGLE FONTS -->
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
-
 </head>
 <body>
-    <div class="origin-content">
-        <!-- NAVIGATION -->
-        <nav>
-            <label class="nav-logo">PowdFolio</label>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="profile.html">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-        </nav>
-
-        <!-- BODY -->
-        <article>
-            <div class="index-content">
-                <div class="index-col-1"></div>
-                <div class="index-col-2">
-                    <div class="index-col-2-1"></div>
-                    <div class="index-col-2-2">
-                        <h6>On-Going Development</h6>
-                        <h1>ERROR <span>404</span></h1>
-                        <p>
-                            Coming Soon!
+    <!-- HEADER -->
+    <!-- NAV -->
+    <nav>
+        <label class="nav-logo">PowdFolio</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+    <!-- SECTION -->
+    <section class="index">
+        <div class="content-header-1">
+            <div class="col-1">
+                <h3 id="index-occupation">ON DEVELOPMENT</h3>
+                    <h1 id="index-name">ERROR <span>404</span></h1>
+                        <p id="index-description">
+                            This page is not yet available.
                         </p>
-                        <form action="blog.html"><button>Proceed to Blog</button></form>
-                    </div>
-                </div>
-                <div class="index-col-3"></div>
+                <form action="blog.html"><button id="index-button">BLOG</button></form>
             </div>
-        </article>
+            <div class="col-2">
+            </div>
+        </div>
 
-        <footer style="background-color: #080808;">
-            <div class="global-footer">
-                <p>&copy; copyrights! 2023 | Powd.Mark Lape - Let's Connect! Discord : Powd#1659 | Facebook : Mark Limuel L. Lape</p>
-            </div>
-        </footer>
-    </div>
+        <!-- FOOTER -->
+        <div class="footer">
+            <p>&copy; copyright! 2023 | Powd.Mark Lape - Let's Connect! Discord : Powd#1659 | Facebook : Mark Limuel L. Lape</p>
+        </div>
+    </section>
+    
 </body>
 </html>
-
