@@ -153,11 +153,11 @@ section.general {
     .content-head {
         height: 20vh;
         padding-top: 6vh;
-        padding: 10vh 100px 0 100px;
-        width: 1000px;
+        padding: 10vh 100px 0 310px;
+        width: 70%;
 
         #head-separation {
-            width: 275px;
+            width: 500px;
             height: 2px;
             background-color: #f51112;
             border: none;
@@ -188,20 +188,44 @@ section.general {
         grid-template-columns: 50% 50%;
 
         .col-1 {
-            padding: 100px;
-            scale: .75;
+            padding: 0 100px;
+            margin: 200px 75px 0 100px ;
             transform: translate(15%, -20%);
+            overflow-x: auto;
 
-            #profile-img {
-                width: 100%;
-                height: auto;
-                margin: auto;
-                border-radius: 100vh;
+            #skill-rate {
+                font-size: 32px;
             }
-            
-            #profile-img:hover {
-                scale: 1.15;
-                transition: 1.5s ease;
+
+            #content-description {
+                font-size: 20px;
+                font-weight: 100;
+            }
+
+            #profile-content-separator {
+                width: 350px;
+                height: 5px;
+                background-color: #f51112;
+                border: none;
+                margin: 18px 0;
+            }
+
+            #content-button {
+                padding: 10px;
+                width: 125px;
+                background-color: #f51112;
+                border: none;
+                border-radius: 5px;
+                color: #ffffff;
+            }
+
+            #content-button:hover {
+                background-color: #ff0000; 
+                font-weight: 900; 
+                transition: ease .5s;
+                scale: 1.5;
+                box-shadow: 0 0 30px #ff0000;
+                border: #a00000 5px solid;
             }
 
             #skills-progress-content {
@@ -209,27 +233,101 @@ section.general {
                 margin-bottom: 16px;
             }
 
-            #knowledge-content-head {
+            .timeline__desc h3 {
                 font-size: 20px;
                 font-weight: 300;
                 margin: 10px 0;
                 color: #f51112;
             }
 
-            #knowledge-content-provider {
+            .timeline__title h1{
                 font-size: 32px;
                 margin-bottom: 10px;
             }
 
-            #knowledge-description {
+            .timeline__desc p {
                 font-size: 18px;
                 margin-bottom: 10px;
             }
+
+            .timeline {
+                /* Used to position the left vertical line */
+                position: relative;
+                width: 500px;
+            }
+            
+            .timeline__line {
+                /* Border */
+                border-right: 2px solid #d1d5db;
+            
+                /* Positioned at the left */
+                left: 0.75rem;
+                position: absolute;
+                top: 0px;
+            
+                /* Take full height */
+                height: 100%;
+            }
+            
+            .timeline__items {
+                /* Reset styles */
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+            }
+            
+            .timeline__item {
+                margin-bottom: 8px;
+            }
+            
+            .timeline__top {
+                /* Center the content horizontally */
+                align-items: center;
+                display: flex;
+            }
+            
+            .timeline__circle {
+                /* Rounded border */
+                background-color: #d1d5db;
+                border-radius: 9999px;
+            
+                /* Size */
+                height: 1.5rem;
+                width: 1.5rem;
+            }
+            
+            .timeline__title {
+                /* Take available width */
+                flex: 1;
+                margin-left: 0.5rem;
+            }
+            
+            .timeline__desc {
+                /* Make it align with the title */
+                margin-left: 2rem;
+            }
+            
         }
 
         .col-2 {
-            width: 600px;
-            transform: translate(0, 20%);
+            margin: 100px 0 0 0 ;
+            width: 75%;
+
+            #desc {
+                font-size: 32px; 
+            }
+
+            #profile-img {
+                width: 80%;
+                height: auto;
+                margin: -30px 90px;
+                border-radius: 100vh;
+            }
+            
+            #profile-img:hover {
+                scale: 1.15;
+                transition: 1.5s ease;
+            }
 
             #content-description {
                 font-size: 20px;
@@ -273,7 +371,7 @@ section.general {
 section.blog {
     height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.7)), url(/img/background-1.jpg); 
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
 
     .content-header-1 {
@@ -282,11 +380,11 @@ section.blog {
         grid-template-columns: 40% 60%;
 
         .col-1 {
-            padding: 100px 200px;
+            padding: 100px 25%;
         }
 
         .col-2 {
-            width: 900px;
+            width: 75%;
             transform: translate(0, 20%);
 
             #content-title {
@@ -346,7 +444,7 @@ section.blog2{
         grid-template-columns: 65% 35%;
 
         .col-1 {
-            padding: 100px 200px;
+            padding: 100px 15%;
         }
 
         .col-2 {
