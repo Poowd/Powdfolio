@@ -1,51 +1,99 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porf</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="/css/scrollbar.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
 
-    <!-- GOOGLE FONTS -->
-    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
-</head>
-<body>
-    <!-- HEADER -->
-    <!-- NAV -->
-    <nav>
-        <label class="nav-logo">PowdFolio</label>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="blog.html">Blog</a></li>
-        </ul>
-    </nav>
-    <!-- SECTION -->
-    <section class="index">
-        <div class="content-header-1">
-            <div class="col-1">
-                <h3 id="index-occupation">DEVELOPER</h3>
-                    <h1 id="index-name">MARK <span>LAPE</span></h1>
-                        <p id="index-description">
-                            Welcome to my portfolio! I am thrilled to have this opportunity to showcase my skills, experience, and passion for UI/UX. Throughout my professional journey, I have dedicated myself to honing my craft and exploring new horizons in order to deliver exceptional results.
-                        </p>
-                <form action="about.html"><button id="index-button">START!</button></form>
-            </div>
-            <div class="col-2">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <!-- 
+        SCREENSIZE
+            xs = mobile phones
+            mg = some desktops
+            lg = desktops
+
+        NUMBER_OF_COLUMNS
+            grid has 12 columns
+
+        TEMPLATE
+            col - SCREENSIZE - NUMBER_OF_COLUMNS
+    -->
+
+    <!-- 
+        TEMPLATE FOR SEMANTIC
+        <MAIN TAG>
+            <CLASS = CONTAINER>
+                <CLASS = ROW>
+                    <CLASS = 12 COLUMN>
+                        <INSIDE TAG>
+     -->
+
+    <body>
+        <!-- SUB_HEADER -->
+        <div class="sub-header">
+            <div class="container">
+                <div class="row">
+                    
+                </div>
             </div>
         </div>
 
-        <!-- FOOTER -->
-        <div class="footer">
-            <p>&copy; copyright! 2023 | Powd.Mark Lape - Let's Connect! Discord : Powd#1659 | Facebook : Mark Limuel L. Lape</p>
-        </div>
-    </section>
-    
-</body>
+        <!-- HEADER_AREA -->
+
+        <header class="header-area header-sticky">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-12">
+                        <nav class="main-nav">
+
+                            <a href="index.html" class="logo">powdfolio</a>
+
+                            <ul class="nav">
+                                <li><a href="index.html">home</a></li>
+                                <li><a href="whoami.html">about</a></li>
+                                <li><a href="portfolio.html">portfolio</a></li>
+                                <li><a href="blog.html">blog</a></li>
+                            </ul>
+
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN_BANNER -->
+        <section class="section main-banner" id="top">
+            <video autoplay muted loop id="bg-video">
+                <source src="/video/bg.mp4"/>
+            </video>
+
+            <div class="video-overlay header-text">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="caption">
+                                <h6>Developer</h6>
+                                <h2>Mark <span>Lape</span></h2>
+                                <p>Welcome to my portfolio! I am thrilled to have this opportunity to showcase my skills, experience, and passion for UI/UX. Throughout my professional journey, I have dedicated myself to honing my craft and exploring new horizons in order to deliver exceptional results.</p>
+                                <form action="whoami.html"><button id="banner-button">powdfolio</button></form>
+                                <br>
+                                <p>Let's Connect! Discord: Powd#1659 | Facebook: Mark Limuel L. Lape</p>
+                                <p>&copy; Copyright 2023 | Powd.Mark Lape</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </body>
+
 </html>
