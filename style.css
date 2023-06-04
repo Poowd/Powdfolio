@@ -9,7 +9,7 @@ a {text-decoration: none; color: #d1d5db;}
 h1, h2, h3, h4, h5, h6 {margin-top: 0px;margin-bottom: 0px;}
 ul {margin-bottom: 0px;}
 p {font-size: 14px;line-height: 25px;color: #2a2a2a;}
-img {width: 100%;overflow: hidden;}
+img {width: 100%;}
 
 /* 
 GLOBAL
@@ -134,3 +134,108 @@ progress::-webkit-progress-value { background-color: #ff0000;}
 ::-webkit-scrollbar-track {background: #ff000000;}
 ::-webkit-scrollbar-thumb {background: #96001600;}
 ::-webkit-scrollbar-thumb:hover {background: #ff000000;}
+
+
+.details {
+  float: left;
+}
+
+.blog h2 {margin-bottom: 20px;font-size: 75px;text-transform: uppercase;font-weight: 800;width: 800px; color: #fff; }
+.blog p {color: #fff;font-size: 14px;max-width: 700px;} 
+
+.blog2 h2 {margin-bottom: 20px;font-size: 64px;text-transform: uppercase;font-weight: 800;width: 450px; color: #fff; }
+.blog2 p {color: #fff;font-size: 14px;max-width: 450px;} 
+/* SLIDER */
+.slider-container {
+  width: 450px; /* Adjust the width as per your preference */
+  overflow: hidden;
+  background-color: #a00000;
+  border-radius: 75px 10px 75px 10px;
+  border: #a00000 5px solid;
+  float: right;
+}
+
+.slider {
+  display: flex;
+  width: 450px;
+  height: 700px;
+  transition: transform 0.5s ease-in-out;
+
+  
+}
+.slider-item {
+  width: 100%;
+  height: auto;
+  object-fit:cover;
+  border-radius: 175px 10px 175px 10px;
+}
+
+
+/* Additional styling for navigation buttons (optional) */
+.slider-button {
+  margin: 0 25px;
+  border-radius: 150px;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 12px;
+  height: 35px;
+  width: 35px;
+  border: #a000004a 3px solid;
+  background-color: #ff000000;
+  color: #ffffff4a;
+  scale: 2;
+  margin: -390px 20px 20px 20px ;
+}
+
+.slider-button:hover {
+  border: #a00000 3px solid;
+  background-color: #ff000000;
+  color: #ffffff;
+  transition: .5s ease;
+}
+
+/* Styling for previous button */
+.slider-button.previous {
+  float: left;
+  
+}
+
+/* Styling for next button */
+.slider-button.next {
+  float: right;
+}
+
+/* SLIDER 2 */
+.slider-container-2 {
+  width: 900px; /* Adjust the width as per your preference */
+  overflow: hidden;
+  background-color: #a00000;
+  border-radius: 75px 10px 75px 10px;
+  border: #a00000 5px solid;
+  float: right;
+}
+
+.slider-2 {
+  display: flex;
+  width: 935px;
+  height: 750px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-item-2 {
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 175px 10px 175px 10px;
+}
+
+/* Styling for previous button */
+.slider-button.previous-2 {
+  float: left;
+}
+
+/* Styling for next button */
+.slider-button.next-2 {
+  float: right;
+}
