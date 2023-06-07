@@ -1,97 +1,68 @@
 <!DOCTYPE html>
-
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powdweb</title>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+    <link rel="icon" href="img/logo.png" type="image/icon type">
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="style.css">
-    </head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- JAVASCRIPT -->
+    <script src="#"></script>
 
-    <!-- 
-        SCREENSIZE
-            xs = mobile phones
-            mg = some desktops
-            lg = desktops
-
-        NUMBER_OF_COLUMNS
-            grid has 12 columns
-
-        TEMPLATE
-            col - SCREENSIZE - NUMBER_OF_COLUMNS
-    -->
+</head>
 
     <!-- 
-        TEMPLATE FOR SEMANTIC
-        <MAIN TAG>
-            <CLASS = CONTAINER>
-                <CLASS = ROW>
-                    <CLASS = 12 COLUMN>
-                        <INSIDE TAG>
+        NOTE: <Tags> will be classified as classes
+              <Elements> will be classified as id
      -->
 
-    <body>
-        <!-- SUB_HEADER -->
-        <div class="sub-header">
-            <div class="container">
-                <div class="row">
-                    
-                </div>
-            </div>
+<body>
+    <!-- BANNER -->
+    <div id="web-banner">
+        <video autoplay muted loop id="bg-video">
+            <source src="/vd/bg.mp4"/>
+        </video>
+        <h1>Powdweb</h1>
+        <form id="floating" action="https://discord.com" target="_blank"><button><img src="img/discordlogo.png" id="logo-float">Discord</button></form>
+    </div>
+    
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" id="logo-img"><a href="landing.html" id="logo">Powdweb</a>
         </div>
-
-        <!-- HEADER_AREA -->
-
-        <header class="header-area header-sticky">
-            <div class="container">
-                <div class="row">
-                    
-                    <div class="col-12">
-                        <nav class="main-nav">
-
-                            <a href="index.html" class="logo">powdfolio</a>
-
-                            <ul class="nav">
-                                <li><a href="index.html">home</a></li>
-                                <li><a href="whoami.html">about</a></li>
-                                <li><a href="portfolio.html">portfolio</a></li>
-                                <li><a href="blog.html">blog</a></li>
-                            </ul>
-
-                        </nav>
-                    </div>
-
+        <input type="checkbox" id="toggler">
+        <label for="toggler">=</label>
+            <div class="menu">
+                <div class="list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </div>
+
             </div>
-        </header>
+    </nav>
 
-        <!-- WHO_AM_I -->
-        <section class="section whoami" id="top">
-            <video autoplay muted loop id="bg-video">
-                <source src="/video/bg.mp4"/>
-            </video>
+    
 
-            <div class="video-overlay header-text">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="content">
-                                <h2>e-Rawr <span>404</span></h2>
-                                <form action="blog.html"><button id="banner-button">powdfolio</button></form>
-                                <br>
-                                <p>Let's Connect! Discord: Powd#1659 | Facebook: Mark Limuel L. Lape</p>
-                                <p>&copy; Copyright 2023 | Powd.Mark Lape</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- CONTENT -->
+    <main class="content">
+        <article class="headline">
+            <h6>ON-GOING DEVELOPMENT</h6>
+                <h1>E-RAWR 404</h1>
+                    <p>Not yet available to the public</p>
+        </article>
+    </main>
 
-    </body>
-
+    <footer>
+        <div class="foot-info">
+            <p>&copy; Copyright 2023. Powdweb | Mark Lape - Let's Connect! Discord: Powd#1659 | Facebook: Mark Limuel L. Lape</p>
+        </div>
+    </footer>
+</body>
 </html>

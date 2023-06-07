@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let currentIndex = 0;
     const totalItems = sliderItems.length;
-    const itemWidth = sliderItems[0].offsetWidth;
+    const itemWidth = 450;
 
     function goToSlide(index) {
         if (index < 0 || index >= totalItems) {
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let currentIndex2 = 0;
         const totalItems2 = sliderItems2.length;
-        const itemWidth2 = sliderItems2[0].offsetWidth;
+        const itemWidth2 = 850;
 
         function goToSlide2(index2) {
             if (index2 < 0 || index2 >= totalItems2) {
