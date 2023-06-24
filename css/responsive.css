@@ -1,0 +1,92 @@
+@media screen and (max-width: 760px) {
+    .header-1 {
+        .nav-1 {
+            .ul-1 {
+                gap: 5vh;
+            }
+
+            .ul-1 li a {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .main-1 {
+        .section-1 {
+            .banner {
+                display: flex;
+                flex-direction: column;
+                padding: 1vh;
+
+                .banner-txt-content, .banner-img-content {
+                    display: flex;
+                    text-align: left;
+                    align-items: center;
+                }
+
+                .banner-txt-content {
+                    flex: 100%;
+                    .h2-banner {
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                    }
+        
+                    .h1-banner {
+                        font-size: 2.5rem;
+                        font-weight: 900;
+                    }
+    
+                    .h1-banner span {
+                        font-size: 3.5rem;
+                        color: #a70000;
+                    }
+        
+                    .p-banner {
+                        font-size: 1rem;
+                        font-weight: 300;
+                    }
+                }
+
+                .banner-img-content {
+                    flex: 100%;
+                    .img-banner {
+                        width: 40vh;
+                        height: 40vh;
+                        padding: 2vh;
+                        border-radius: 50%;
+                        border: #a70000 1vh solid;
+                    }
+    
+                    .img-banner:hover {
+                        padding: 0;
+                        border: #ff0000 1vh solid;
+                        box-shadow: 0 0 30px #ff0000;
+                        scale: 1.1;
+                        transition: .5s ease;
+                        cursor: pointer;
+                    }
+    
+                }
+            }
+        }
+
+        .section-2 {
+            .about {
+                flex-direction: column;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+}

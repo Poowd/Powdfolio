@@ -1,0 +1,62 @@
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Make the images invisible by default */
+  .slideshow-items  {
+    display: none;
+  }
+  
+  /* Caption Info */
+  .Info {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+
+        .info-details {
+            width: inherit;
+            height: inherit;
+            display: grid;
+            place-content: center;
+        }
+
+        .info-details h1 {
+            font-size: 7rem;
+            margin-bottom: 1vh;
+        }
+  }
+
+  .sld-item {
+    object-fit: cover;
+    width: 100%;
+    height: 50vh;
+  }
+  
+  .enable, .dots:hover {
+    background-color: #717161;
+  }
+  
+  /* Faint animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.4s;
+    animation-name: fade;
+    animation-duration: 1.4s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+  }
+  
+  @keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+  }
