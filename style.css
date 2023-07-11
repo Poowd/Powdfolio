@@ -17,19 +17,12 @@
 }
 
 #text, #img {
+    flex: 50%;
     padding: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: right;
-}
-
-#text {
-    flex: 45%;
-}
-
-#img {
-    flex: 55%;
 }
 
 #text h2 {
