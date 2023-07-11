@@ -3,162 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PowdWeb</title>
 
-    <!-- CSS LINK -->
-        <link rel="stylesheet" href="style.css">
-        
-        <link rel="stylesheet" href="/css/carousel.css">
-        <link rel="stylesheet" href="/css/loader.css">
-        <link rel="stylesheet" href="/css/overlay.css">
-        <link rel="stylesheet" href="/css/typewriter.css">
-        <link rel="stylesheet" href="/css/responsive.css">
-        
 
-        <script src="/js/loader.js"></script>
-        <script src="/js/overlay.js"></script>
-        <script defer src="/js/carousel.js"></script>
-        <script defer src="/js/script.js"></script>
+    <title>Mark Lape</title>
+
+
+    <link rel="stylesheet" href="style.css">
 
 </head>
-
-<!-- 
-        POWD'S GUIDE:
-
-        TEXT COLOR : #f7f7f5
-        TEXT BACKGROUND COLOR : #ff7b7b
-        NEUTRAL COLOR : #ff5252
-        HIGHLIGHT : #ff0000
-        MAIN COLOR : #a70000
-        BLACK : #161717
-        BACKGROUND : #1e1e1e
-    -->
-
-<body onload="myFunction()"  style="margin:0;">
-
-    <div id="loader"></div>
+<body>
     
-    <content id="mycont">
-        <header class="header-1">
-            <nav class="nav-1">
-                <ul class="ul-1">
-                    <li><a href="#section-2">about</a></li>
-                    <li><a href="#section-3">skills</a></li>
-                    <li><a href="#">item c</a></li>
-                    <li><a href="#">item d</a></li>
-                    <li><a href="#">item e</a></li>
-                </ul>
-            </nav>
-        </header>
-    
-        <main class="main-1">
-            <section class="section-1">
-                <div class="banner">
-                    <div class="banner-txt-content">
-                        <h2 class="h2-banner">Front-End Developer </h2>
-                        <h1 class="h1-banner">I'm <span>Mark Lape</span></h1>
-                        <p class="p-banner">Nice to meet you</p>
-                    </div>
-                    <div class="banner-img-content">
-                        <img onclick="on()" src="/img/pfp.jpg" class="img-banner">
-                        <div id="overlay" onclick="off()">
-                            <img src="/img/pfp.jpg">
-                        </div>
-                    </div>
-                </div>
-            </section>
-    
-            <section class="section-2" id="section-2">
-                <div class="about">
-                    <div class="about-r-content">
-                        <h1>About</h1>
-                        <h2>Front End Developer</h2>
-                        <p>As a front-end developer, you play a critical role in creating engaging and user-friendly websites that seamlessly blend form and function. With your expertise in HTML, CSS, JavaScript, and other front-end tools and frameworks, you are able to transform design mockups into functional and visually appealing websites.</p>
-                        <button>Download Resume</button>
-                    </div>
-                    <div class="about-l-content">
-                        <div class="about-contact">
-                            <div class="about-content-ico">
-                                <img src="/img/icons/phone.png">
-                            </div>
-                            <div class="about-content-txt">
-                                <h3>Phone</h3>
-                                <p>09876543211</p>
-                            </div>
-                        </div>
-                        <div class="about-email">
-                            <div class="about-content-ico">
-                                <img src="/img/icons/mail.png">
-                            </div>
-                            <div class="about-content-txt">
-                                <h3>Email</h3>
-                                <p>lapemark11@gmail.com</p>
-                            </div>
-                        </div>
-    
-                        <div class="about-link">
-                            <div class="about-content-ico">
-                                <img src="/img/icons/link.png">
-                            </div>
-                            <div class="about-content-ico2">
-                                <a href="#"><img src="/img/icons/facebook.png">Facebook</a>
-                                <a href="#"><img src="/img/icons/github.png">Github</a>
-                                <a href="#"><img src="/img/icons/discord.png">Discord</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <main id="index-main">
+        <div id="container">
+            <div id="text">
+                <h2>CS Major Student</h2>
+                <h1>Mark Limuel L. Lape</h1>
+                <p>Hello! Welcome to my portfolio, get to know me by browsing this website containing my personal information, achievements, works, contributions, on-going projects, interest, and much more...</p>
+                <form action="index.html"><button>Click Me!</button></form>
+            </div>
+            <div id="img">
+                <img src="/img/bg-char.svg">
+            </div>
+        </div>
+    </main>
 
-            <section class="section-3" id="section-3">
-                <div class="skills">
-                     <!-- Slideshow container -->
-                    <div class="slideshow-container fade">
-
-                        <!-- Full images with numbers and message Info -->
-                        <div class="slideshow-items fade">
-                        <!-- <img src="17.png" class="sld-item"> -->
-                        <div class="Info">
-                            <div class="info-details">
-                                <h1>Front-End Developer</h1>
-                                <p>I do simple web designs for general-purpose using HTML, CSS and JavaScript.</p>
-                            </div>
-                        </div>
-                        </div>
-                    
-                        <div class="slideshow-items fade">
-                        <!-- <img src="16.png" class="sld-item"> -->
-                        <div class="Info">
-                            <div class="info-details">
-                                <h1>General Editor</h1>
-                                <p>I do basic photo and video editing.</p>
-                            </div>
-                        </div>
-                        </div>
-                    
-                        <div class="slideshow-items fade">
-                        <!-- <img src="16.png" class="sld-item"> -->
-                        <div class="Info">
-                            <div class="info-details">
-                                <h1>Traditional Artist</h1>
-                                <p>I do sketches.</p>
-                            </div>
-                        </div>
-                        </div>
-                    
-                        <!-- Back and forward buttons -->
-                        <!-- <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
-                        <a class="forward" onclick="plusSlides(1)">&#10095;</a> -->
-                    </div>
-                </div>
-            </section>
-    
-            <footer class="footer-1">
-                <section class="footer-section">
-                    <p>Powd_ &copy; 2023 My_Portfolio. This project is not affiliated with any and all existing organization.</p>
-                </section>
-            </footer>
-        </main>
-    </content>
 </body>
 </html>
