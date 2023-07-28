@@ -219,7 +219,8 @@ body {
     }
 
     .portfolio-main ul {
-        gap: 2vh 2vh;
+        justify-content: space-around;
+        align-items: space-around;
     }
 
     .portfolio-main ul a li {
