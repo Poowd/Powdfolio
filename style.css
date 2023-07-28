@@ -204,7 +204,7 @@ body {
     .top-nav ul {
         width: 100%;
         justify-content: center;
-        gap: .5vh;
+        gap: 5%;
     }
     .top-nav ul li {
         width: 10vh;
@@ -219,7 +219,7 @@ body {
     }
 
     .portfolio-main ul {
-        gap: 5vh 5vh;
+        gap: 5% 5%;
     }
 
     .portfolio-main ul a li {
