@@ -208,7 +208,7 @@ body {
     }
     .top-nav ul li {
         width: 10vh;
-        font-size: 1rem;
+        font-size: .85rem;
     }
 
     .portfolio-main {
@@ -219,7 +219,7 @@ body {
     }
 
     .portfolio-main ul {
-        gap: 5% 5%;
+        gap: 2vh 2vh;
     }
 
     .portfolio-main ul a li {
