@@ -1,0 +1,23 @@
+#classkode {
+    background-image: url(/img/classkode.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#budsys {
+    background-image: url(/img/budsys.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#ebento {
+    background-image: url(/img/ebento.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#personabud {
+    background-image: url(/img/personabud.jpg);
+    background-size: cover;
+    background-position: center;
+}
