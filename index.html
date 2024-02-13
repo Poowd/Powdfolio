@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day</title> <!-- Tab Title -->
+    <link rel="icon" href="./assets/imgs/4.png"> <!-- Tab Icon -->
+    <link rel="stylesheet" href="./style.css"> <!-- main css file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor">
+        <img src="./assets/imgs/4.png" alt="." class="imageCursor">
+    </div>
+
+    <main>
+        <marquee direction="right">
+            <div class="">
+                <p>~ I love you more than coffee, but please don't make me prove it. = <span class="emoji">🛫</span></p>
+            </div>
+        </marquee>
+
+        <div class="copyrights">
+            <p>© Lape 2024, For February 14, 2024</p>
+        </div>
+
+        <div class="cardContainer">
+            <img src="./assets/imgs/1.png" alt="Happy Valentine's Day" class="greetingsCard" draggable="false">
+            <button onclick="{ openOverlay() }" class="primaryButton">Click Me</button>
+        </div>
+        
+        <div class="overlay">
+                <div class="innerContent">
+                    <div class="left">
+                        <div class="innerLeft">
+                            <h1><span class="name">Jho</span>,</h1>
+                            <p>
+                                <span  class="stanza line1">The silence of your heart makes me wonder</span><br>
+                                <span  class="stanza line2">How could someone like you fall so further</span><br>
+                                <span  class="stanza line3">Where my heart feels closer yet so farther</span><br>
+                                <span  class="stanza line4">Still, we will be doing things together</span><br>
+                                <br>
+                                <span  class="stanza line5">How do I even stop myself from falling in love</span><br>
+                                <span  class="stanza line6">When your eyes shines through my mauve</span><br>
+                                <span  class="stanza line7">As if you've peirced yourself to mine unexpectedly</span><br>
+                                <span  class="stanza line8">You made me believe in something I've lost for an eternity</span><br>
+                                <br>
+                            </p>
+                            <blockquote class="note">"You were my first, and I'll keep it that way"</blockquote>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="innerRight" onclick="{ eopenDialog() }"></div>
+                        <ul class="imageSelection">
+                            <button class="tertiaryButton" onclick="{ a() }">01</button>
+                            <button class="tertiaryButton" onclick="{ b() }">02</button>
+                            <button class="tertiaryButton" onclick="{ c() }">03</button>
+                            <button class="tertiaryButton" onclick="{ d() }">04</button>
+                            <button class="tertiaryButton" onclick="{ e() }">05</button>
+                            <button class="tertiaryButton" onclick="{ f() }">06</button>
+                            <button class="tertiaryButton" onclick="{ g() }">07</button>
+                            <button class="tertiaryButton" onclick="{ h() }">08</button>
+                            <button class="tertiaryButton" onclick="{ i() }">09</button>
+                            <button class="tertiaryButton" onclick="{ j() }">10</button>
+                            <button class="tertiaryButton" onclick="{ k() }">11</button>
+                            <button class="tertiaryButton" onclick="{ l() }">12</button>
+                        </ul>
+                    </div>
+                </div>
+                <button onclick="{ closeOverlay() }" class="secondaryButton">&times;</button>
+        </div>
+
+        <div class="characterContainer">
+            <img src="./assets/imgs/3.png" alt="ee" class="character1" onclick="{ openDialog() } " draggable="false">
+        </div>
+
+        <div class="characterContainer2">
+            <img src="./assets/imgs/5.png" alt="ee" class="character2" draggable="false">
+        </div>
+
+        <div class="dialog">
+            <h1>No, Stop</h1>
+            <button onclick="{ closeDialog() }" class="secondaryButton sm-btn">&times;</button>
+        </div>
+
+        <div class="suprise">
+            <img src="./assets/imgs/suprise.jpg" alt="ee" class="easter" draggable="false">
+            <button onclick="{ ecloseDialog() }" class="secondaryButton sm-btn">&times;</button>
+        </div>
+
+        <audio src="./assets/bgm/SUGARCANE - Leonora (Official Lyric Video).mp3" autoplay>
+
+    </main>
+
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>

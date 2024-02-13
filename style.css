@@ -1,0 +1,341 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  /* Disable Highlighting */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
+  /* Overlay highest number : 70 */
+}
+
+:root {
+  font-size: 1em;
+  font-family: "Single Day", cursive;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Modified Cursor */
+
+.cursor {
+  position: relative;
+  margin: 0.25em;
+  width: 6px;
+  height: 6px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  z-index: 999;
+}
+
+.imageCursor {
+  width: 45px;
+  height: 45px;
+}
+
+/* Buttons */
+
+.primaryButton {
+  padding: 1em 2em;
+  font-size: 1.25em;
+  font-weight: 700;
+  cursor: none;
+  font-family: "Single Day", cursive;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  border-radius: 5em;
+  z-index: 20;
+}
+
+.primaryButton:hover,
+.primaryButton:focus {
+  background-color: darkmagenta;
+}
+
+.secondaryButton {
+  position: fixed;
+  padding: 0.5em 1em;
+  font-size: 1.25em;
+  font-weight: 700;
+  cursor: none;
+  font-family: "Single Day", cursive;
+  background-color: transparent;
+  color: white;
+  border-radius: 5em;
+  border: none;
+  z-index: 20;
+  top: 1em;
+  right: 1em;
+}
+
+.secondaryButton:hover,
+.secondaryButton:focus {
+  background-color: rgb(20, 19, 20);
+}
+
+.tertiaryButton {
+  padding: 0.5em 1em;
+  font-size: 1em;
+  font-weight: 700;
+  cursor: none;
+  font-family: "Single Day", cursive;
+  background-color: transparent;
+  color: white;
+  border: white 2px solid;
+  border-radius: 5em;
+  z-index: 50;
+}
+
+.sm-btn {
+  padding: 0.75em 0.5em;
+  font-size: 1em;
+}
+
+.sm-btn:hover,
+.sm-btn:focus {
+  background-color: transparent;
+}
+
+.tertiaryButton:hover,
+.tertiaryButton:focus {
+  background-color: rgb(20, 19, 20);
+  border: transparent 2px solid;
+}
+
+/* Body */
+
+body {
+  overflow: hidden;
+  background-image: url("./assets/imgs/2.png");
+  cursor: none;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+}
+
+.cardContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.greetingsCard {
+  width: 100%;
+}
+
+.character1 {
+  position: fixed;
+  height: 50%;
+  right: 10em;
+  bottom: 0;
+  z-index: 20;
+}
+
+.character1:hover {
+  filter: hue-rotate(312deg);
+}
+
+.character2 {
+  position: fixed;
+  height: 50%;
+  left: 5em;
+  bottom: 0;
+  z-index: 20;
+}
+
+.overlay {
+  position: fixed;
+  background-color: rgba(20, 19, 20, 0.949);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100vh;
+  padding: 2.5em;
+  top: 0;
+  display: none;
+  z-index: 40;
+}
+
+.dialog {
+  position: fixed;
+  background-color: rgb(239, 231, 239);
+  backdrop-filter: blur(10px);
+  width: 15em;
+  height: 5vh;
+  padding: 2.5em;
+  border-radius: 50em;
+  right: 3em;
+  bottom: 25em;
+  display: none;
+  align-items: center;
+  z-index: 30;
+}
+
+.suprise {
+  position: fixed;
+  background-color: rgba(20, 19, 20, 0.949);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100vh;
+  padding: 2.5em;
+  top: 0;
+  display: none;
+  z-index: 100;
+}
+
+.easter {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.innerContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 30;
+}
+
+.right,
+.left {
+  flex: 50%;
+  display: flex;
+}
+
+.left {
+  justify-content: right;
+}
+
+.innerRight,
+.innerLeft {
+  width: 75%;
+  background-color: whitesmoke;
+}
+
+.innerRight {
+  background-image: url("./assets/imgs/1 (1).jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 1em;
+}
+
+.innerLeft {
+  padding: 1.5em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stanza {
+  padding: 1.5em;
+  word-wrap: normal;
+  font-size: 1.5em;
+}
+
+.note {
+  font-size: 0.75em;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.copyrights {
+  position: fixed;
+  width: 100%;
+  bottom: 2.5em;
+  text-align: center;
+}
+
+.imageSelection {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  gap: 0.5em;
+  position: absolute;
+  padding: 1em;
+}
+
+.emoji {
+  font-size: 1.5em;
+}
+
+@media screen and (width < 1200px) {
+  .cardContainer {
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .greetingsCard {
+    width: 100vw;
+    padding: 1em;
+  }
+  .overlay {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    z-index: 90;
+  }
+  .innerContent {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    overflow-y: scroll;
+    z-index: 30;
+  }
+  .right {
+    position: relative;
+  }
+  .innerRight,
+  .innerLeft {
+    width: 100%;
+    height: 100vh;
+  }
+  .innerRight {
+    padding: 1em;
+  }
+  .innerLeft {
+    padding: 1.5em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .stanza {
+    padding: 0;
+    font-size: 1.25em;
+  }
+  .copyrights {
+    z-index: 100;
+  }
+
+  .imageSelection {
+    position: absolute;
+    top: 0;
+  }
+}
+
+/* ScrollBar */
+::-webkit-scrollbar {
+  width: 0.25em;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
